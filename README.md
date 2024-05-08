@@ -17,4 +17,4 @@ Instances:
 7. [EfficientNetB0-Image-Classification-COVID19-chest-Xray-dataset](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case) [Web](https://tybrucechen.github.io/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case/)
 
 This repository should work on most CNN and ViT structured models. (Model successfully went through the test: ResNet50, DenseNet121, EfficientNetB0, ViT-patch16) <br>
-Grad-CAM used: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view)
+Grad-CAM used in this respository: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view)
