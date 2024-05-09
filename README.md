@@ -69,4 +69,33 @@ There are 2 csv files generated in `Overall` model and 5 csv files generated in 
 Specify the path of each required csv file
 sample:
 ```
+path_name <- '~/Downloads/CSV_files_densenet121/temp_name-densenet121.csv'
+plotmode<- '' #select the plot model: 'Overall': plot four in one graph, 
+#other: plot in 4 separate graphs
+
+path <- '~/Downloads/temp.csv'
+
+path_origin <- '~/Downloads/CSV_files_densenet121/temp-densenet121-origin.csv'
+path_overlapped <- '~/Downloads/CSV_files_densenet121/temp-densenet121-overlapped.csv'
+path_heatmap <- '~/Downloads/CSV_files_densenet121/temp-densenet121-heatmap.csv'
+path_colormap <- '~/Downloads/CSV_files_densenet121/temp-densenet121-colormap.csv'
+
+title_animint <- 'Animated2Grad: CAM-COVID-19-chest-X-rays-DenseNet121-
+visualization-140px-430cases' #the title of your plot
+source_url <- 'https://github.com/TyBruceChen/Animinted2GradCAM' 
+```
+
+4. Check the visualization and upload it through GitHub for online visualization
+<img width="644" alt="Screenshot 2024-05-09 at 2 22 09 PM" src="https://github.com/TyBruceChen/Animinted2GradCAM/assets/152252677/8bbcf8a3-2f06-4670-bfee-e79f28dcc11f">
+
+As shown above, the files are stored temporarily in local and you can copy it to another folder. Also, the visualization is online through your local part.
+
+To push the content to GitHub, go inside the file folder,
+```
+git init .
+git add .
+git commit -m 'first commit'
+pbcopy < (the path of your github public key)
+git remote add origin git@(your github repository uploading URL)
+git push -u origin main
 ```
