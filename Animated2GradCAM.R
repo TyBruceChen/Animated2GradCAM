@@ -37,10 +37,10 @@ github_repo <- 'Animated2GradCAM-COVID19-Chest-X-ray-ViT-V5-140px-609Case-animat
 #gert::git_config_global_set("user.name", "yourUserName") 
 #gert::git_config_global_set("user.email", "yourEmail")
 
-git_token <- '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' #bind the generated toekn
+git_token <- '' #bind the generated toekn
 Sys.setenv(GITHUB_PAT= git_token) 
-gert::git_config_global_set("user.name", "TyBruceChen") 
-gert::git_config_global_set("user.email","tianyi.bruce.chen@gmail.com")
+gert::git_config_global_set("user.name", "username") 
+gert::git_config_global_set("user.email","bonded email")
 
 ########################################################
 
