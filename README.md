@@ -17,4 +17,56 @@ Instances:
 7. [EfficientNetB0-Image-Classification-COVID19-chest-Xray-dataset](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case) [Web](https://tybrucechen.github.io/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case/)
 
 This repository should work on most CNN and ViT structured models. (Model successfully went through the test: ResNet50, DenseNet121, EfficientNetB0, ViT-patch16) <br>
-Grad-CAM used in this respository: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view)
+Grad-CAM used in this repository: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view)
+
+### How to use this repository ###
+
+1. Install Required Package: <br>
+
+Python:
+```
+import torch #pip install torch
+from torch import nn
+import timm  #pip intall timm
+
+import numpy as np #pip install numpu
+import pandas as pd #pip install pandas
+from GradCAM import *
+from nparr2csv import *
+```
+R:
+```
+library(animint2) #install.packages(animint2)
+library(gert) #install.packages(gert)
+```
+
+2. Modify your configuration and generate the csv files that store the pixel values:
+Specify the path of your model: ```model_path = root_path + 'models/densenet121-lr_1e-3/COVID_balancedpaper1_.pt'```.
+
+Specify the path of your image information txt file: ```test_file_path = root_path + 'processed/test.txt'```.
+The content should contain each file's path along with its label format:```img_path (2 space) label```. <br>
+sample:
+```
+./COVID-19_Radiography_Dataset\Normal\images\Normal-6722.png  2
+./COVID-19_Radiography_Dataset\Lung_Opacity\images\Lung_Opacity-2231.png  1
+./COVID-19_Radiography_Dataset\Normal\images\Normal-4755.png  2
+./COVID-19_Radiography_Dataset\Lung_Opacity\images\Lung_Opacity-5100.png  1
+./COVID-19_Radiography_Dataset\Normal\images\Normal-6684.png  2
+./COVID-19_Radiography_Dataset\Normal\images\Normal-5928.png  2
+./COVID-19_Radiography_Dataset\COVID\images\COVID-1896.png  0
+```
+
+Specify the actual name of each class corresponding to its numerical label ```class_list = ['COVID-19', 'Lung_Opacity','Normal','Pneumonia']```
+
+Specify the index of the layer you want to  visualize: ```layer_idx = 3```
+
+These are the basic configuration to run the python file: ```Animated2GradCAM.py```
+
+There are 2 csv files generated in `Overall` model and 5 csv files generated in `Normal` mode (default)
+
+3. Generate visualization files through R:
+
+Specify the path of each required csv file
+sample:
+```
+```
