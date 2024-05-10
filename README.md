@@ -96,6 +96,20 @@ git init .
 git add .
 git commit -m 'first commit'
 pbcopy < (the path of your github public key)
-git remote add origin git@github.com:(your github repository uploading URL)
+git remote add origin git@github.com:(your github repository uploading URL: username/repository_name)
 git push -u origin main
 ```
+
+For modification (the folder is newly created and wanted to upload (merge with) the already-existed repository):
+```
+git pull origin main --allow-unrelated-histories
+```
+Synchronize the local repository with the remote (GitHub) repository, and allow them to have different origin histories. This step should happen after you add the public key path and remote repository location to local repo.
+
+Quit from vim editor: ```:wq```
+
+After merging, push it to the main branch of the GitHub repository:
+```
+git push origin main
+```
+
