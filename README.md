@@ -96,6 +96,6 @@ git init .
 git add .
 git commit -m 'first commit'
 pbcopy < (the path of your github public key)
-git remote add origin git@(your github repository uploading URL)
+git remote add origin git@github.com:(your github repository uploading URL)
 git push -u origin main
 ```
