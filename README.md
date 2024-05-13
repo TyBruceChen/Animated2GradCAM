@@ -5,6 +5,10 @@ I developed this repository during our research on [A Vision Transformer Machine
 
 Specifically, I would like to thank Dr. Toby Hocking, who introduced and created this powerful [animint2](https://github.com/animint/animint2) R package.
 
+E.X.:
+
+![gif](animated2gradcam-example.gif)
+
 Instances:
 1. [Model prediction visualized in 200*200 pixel 696 cases in COVID-19 chest X-ray dataset](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-ViT-V2-200px-696Case) [Web](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-ViT-V1-100px-809Case)
 2. [Model prediction visualized in 100*100 pixel 809 cases in COVID-19 chest X-ray dataset](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-ViT-V1-100px-809Case) [Web](https://tybrucechen.github.io/Animated2GradCAM-COVID19-Chest-X-ray-ViT-V2-200px-696Case/)
