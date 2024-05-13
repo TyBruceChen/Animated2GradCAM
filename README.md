@@ -19,10 +19,10 @@ Used Grad-CAM code in Python is from my repository: [Grad-CAM-pytorch---Understa
 
 ### How to use this repository ###
 
-* #### [Required package installation]()
-* #### [Parameter configuration in Python file to generate CSV files]()
-* #### [Parameter configuration in R file to generate interactive visualization]()
-* #### [Push the viz through the GitHub Page (optional)]()
+* #### [Required package installation](https://github.com/TyBruceChen/Animinted2GradCAM#1-install-required-package-)
+* #### [Parameter configuration in Python file to generate CSV files](https://github.com/TyBruceChen/Animinted2GradCAM#2-modify-your-configuration-and-generate-the-csv-files-that-store-the-pixel-values)
+* #### [Parameter configuration in R file to generate interactive visualization](https://github.com/TyBruceChen/Animinted2GradCAM#3-generate-visualization-files-through-r)
+* #### [Push the viz through the GitHub Page (optional)](https://github.com/TyBruceChen/Animinted2GradCAM#4-check-the-visualization-and-upload-it-through-github-for-online-visualization)
 
 #### 1. Install Required Package: <br>
 
