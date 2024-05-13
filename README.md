@@ -15,11 +15,16 @@ Instances:
 7. [EfficientNetB0-Image-Classification-COVID19-chest-Xray-dataset](https://github.com/TyBruceChen/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case) [Web](https://tybrucechen.github.io/Animated2GradCAM-COVID19-Chest-X-ray-EfficientNetB0-140px-431Case/)
 
 This repository should work on most CNN and ViT structured models. (Model successfully went through the test: ResNet50, DenseNet121, EfficientNetB0, ViT-patch16) <br>
-Used Grad-CAM code in python is from my repository: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view) based on this paper: [Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/abs/1610.02391)
+Used Grad-CAM code in Python is from my repository: [Grad-CAM-pytorch---Understand-deep-learning-from-higher-view](https://github.com/TyBruceChen/Grad-CAM-pytorch---Understand-deep-learning-from-higher-view) based on this paper: [Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/abs/1610.02391)
 
 ### How to use this repository ###
 
-1. Install Required Package: <br>
+* #### [Required package installation]()
+* #### [Parameter configuration in Python file to generate CSV files]()
+* #### [Parameter configuration in R file to generate interactive visualization]()
+* #### [Push the viz through the GitHub Page (optional)]()
+
+#### 1. Install Required Package: <br>
 
 Python:
 ```
@@ -38,7 +43,7 @@ library(animint2) #install.packages(animint2)
 library(gert) #install.packages(gert)
 ```
 
-2. Modify your configuration and generate the csv files that store the pixel values:
+#### 2. Modify your configuration and generate the csv files that store the pixel values:
 Specify the path of your model: ```model_path = root_path + 'models/densenet121-lr_1e-3/COVID_balancedpaper1_.pt'```.
 
 Specify the path of your image information txt file: ```test_file_path = root_path + 'processed/test.txt'```.
@@ -62,7 +67,7 @@ These are the basic configuration to run the python file: ```Animated2GradCAM.py
 
 There are 2 csv files generated in `Overall` model and 5 csv files generated in `Normal` mode (default)
 
-3. Generate visualization files through R:
+#### 3. Generate visualization files through R:
 
 Specify the path of each required csv file
 sample:
@@ -83,7 +88,7 @@ visualization-140px-430cases' #the title of your plot
 source_url <- 'https://github.com/TyBruceChen/Animinted2GradCAM' 
 ```
 
-4. Check the visualization and upload it through GitHub for online visualization
+#### 4. Check the visualization and upload it through GitHub for online visualization
 <img width="644" alt="Screenshot 2024-05-09 at 2 22 09 PM" src="https://github.com/TyBruceChen/Animinted2GradCAM/assets/152252677/8bbcf8a3-2f06-4670-bfee-e79f28dcc11f">
 
 As shown above, the files are stored temporarily in local and you can copy it to another folder. Also, the visualization is online through your local part.
@@ -102,7 +107,7 @@ For modification (the folder is newly created and wanted to upload (merge with) 
 ```
 git pull origin main --allow-unrelated-histories
 ```
-Synchronize the local repository with the remote (GitHub) repository, and allow them to have different origin histories. This step should happen after you add the public key path and remote repository location to local repo.
+Synchronize the local repository with the remote (GitHub) repository, and allow them to have different origin histories. This step should happen after you add the public key path and remote repository location to the local repo.
 
 Quit from vim editor: ```:wq```
 
