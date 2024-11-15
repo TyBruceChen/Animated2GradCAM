@@ -1,9 +1,9 @@
 # Animated2GradCAM:   Grad CAM Visualized & Interactive
 This repository is devoted to making image classification results Grad-CAM-visualized and interactive.
 
-I developed this repository during our research Papers: [A Vision Transformer Machine Learning Model for COVID-19 Dagnosis Using Chest X-Ray Images](https://github.com/TyBruceChen/Research-A-Fined-Tuned-ViT-for-COVID-19-Image-Auxiliary-Diagnosing/tree/main) and A Highly Secure and Accurate System for COVID-19 Diagnosis from Chest X-ray Images.
+I developed this repository during our research Papers: [A Vision Transformer Machine Learning Model for COVID-19 Dagnosis Using Chest X-Ray Images](https://github.com/TyBruceChen/Research-A-Fined-Tuned-ViT-for-COVID-19-Image-Auxiliary-Diagnosing/tree/main) (DOI: 10.1016/j.health.2024.100332) and [A Highly Secure and Accurate System for COVID-19 Diagnosis from Chest X-ray Images](https://github.com/TyBruceChen/AI-Telehealth-System-with-ViT-and-Kyper-Cryptography) (DOI: 10.1109/MWSCAS60917.2024.10658795).
 
-Specifically, I would like to thank Dr. Toby Hocking, who introduced and created this powerful [animint2](https://github.com/animint/animint2) R package.
+Specifically, I would like to thank Dr. Toby Hocking, who introduced and created the powerful [animint2](https://github.com/animint/animint2) R package.
 
 E.X.:
 
